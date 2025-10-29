@@ -1,0 +1,26 @@
+{
+  "name": "playwright-bdd",
+  "version": "1.0.0",
+  "description": "BDD Test Application with Playwright and Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/server.js",
+    "test": "cucumber-js tests/features/**/*.feature",
+    "test:login": "cucumber-js tests/features/login.feature",
+    "test:users": "cucumber-js tests/features/user-management.feature",
+    "test:nav": "cucumber-js tests/features/navigation.feature"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
