@@ -9,7 +9,10 @@ let context: BrowserContext;
 let page: Page;
 
 Before(async function () {
-  browser = await chromium.launch({ headless: true });
+  browser = await chromium.launch({ 
+    headless: true,
+    channel: 'chrome'
+  });
   context = await browser.newContext();
   page = await context.newPage();
 });
